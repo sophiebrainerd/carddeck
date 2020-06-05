@@ -7,11 +7,10 @@ namespace CardDeck
     {
         static void Main(string[] args)
         {
-            Deck poker = new Deck();
-            foreach(Card c in poker.newDeck)
-            {
-                c.Display();
-            }
+            Deck d1 = new Deck();
+            d1.Shuffle();
+            Player Sophie = new Player();
+            Sophie.Draw();
         }
     }
 }
